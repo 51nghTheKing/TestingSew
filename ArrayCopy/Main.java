@@ -2,9 +2,6 @@ package ArrayCopy;
 import java.time.LocalDate;
 
 public class Main {
-    /**
-     * @param args
-     */
     public static void main(String[] args) {
         Jahrgang j = new Jahrgang("3AHIT", 3);
         j.addSchularbeitstermin(LocalDate.of(2019, 11, 11));

@@ -6,11 +6,6 @@ public class Jahrgang {
     private int schulstufe;
     private LocalDate[] schularbeitsTermine;
     private static int maxSchueler = 30;
-
-    /**
-     * @param kuerzel
-     * @param schulstufe
-     */
     public Jahrgang(String kuerzel, int schulstufe) {
         if (kuerzel == null) {
             throw new IllegalArgumentException(
@@ -20,7 +15,6 @@ public class Jahrgang {
         this.schulstufe = schulstufe;
         this.schularbeitsTermine = new LocalDate[0];
     }
-
     public String erstelleTerminliste() {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < schularbeitsTermine.length; i++) {

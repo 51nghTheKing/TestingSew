@@ -9,15 +9,10 @@ import java.util.SimpleTimeZone;
 public class ToDoListe implements Serializable {
     private String name;
     private ToDoEintrag[] eintraege;
-
     public ToDoListe(String name) {
         this.name = name;
         this.eintraege = new ToDoEintrag[0];
     }
-
-    /**
-     * @param text
-     */
     public void addEintrag(String text) {
         eintraege = Arrays.copyOf(eintraege, eintraege.length + 1);
         eintraege[eintraege.length - 1] = new ToDoEintrag(text);
